@@ -35,7 +35,7 @@ _DP_CRUISE_MIN_V_NORMAL = [-0.015, -0.015, -0.12, -1.21]
 _DP_CRUISE_MIN_V_SPORT =  [-0.02, -0.02, -0.14, -1.22]
 _DP_CRUISE_MIN_BP =       [0.,     2.0,  11,   25.]
 
-_DP_CRUISE_MAX_V_ECO =    [0.8, 1.0, 0.8, 0.75, 0.7, 0.4, 0.1]
+_DP_CRUISE_MAX_V_ECO =    [0.8, 1.0, 0.7, 0.6, 0.5, 0.4, 0.1]
 _DP_CRUISE_MAX_V_NORMAL = [0.95, 1.05, 0.8, 0.75, 0.7, 0.4, 0.1]
 _DP_CRUISE_MAX_V_SPORT =  [1.13, 1.12, 0.83, 0.75, 0.7, 0.4, 0.1]
 _DP_CRUISE_MAX_BP =       [0.0,  6., 10., 15., 20., 25., 40]
