@@ -32,7 +32,7 @@ def register(show_spinner=False) -> str | None:
   entirely.
   """
   params = Params()
-
+  return UNREGISTERED_DONGLE_ID
   dongle_id: str | None = params.get("DongleId", encoding='utf8')
   if dongle_id is None and Path(Paths.persist_root()+"/comma/dongle_id").is_file():
     # not all devices will have this; added early in comma 3X production (2/28/24)
@@ -98,7 +98,7 @@ def register(show_spinner=False) -> str | None:
 
   if dongle_id:
     params.put("DongleId", dongle_id)
-    set_offroad_alert("Offroad_UnofficialHardware", (dongle_id == UNREGISTERED_DONGLE_ID) and not PC)
+    #set_offroad_alert("Offroad_UnofficialHardware", (dongle_id == UNREGISTERED_DONGLE_ID) and not PC)
   return dongle_id
 
 
