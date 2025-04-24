@@ -41,16 +41,16 @@ EVENTS_SP: dict[int, dict[str, Alert | AlertCallbackType]] = {
 
   EventNameSP.manualSteeringRequired: {
     ET.USER_DISABLE: Alert(
-      "Automatic Lane Centering is OFF",
-      "Manual Steering Required",
+      "自動車道置中已關閉",
+      "請手動控制轉向",
       AlertStatus.normal, AlertSize.mid,
       Priority.LOW, VisualAlert.none, AudibleAlert.disengage, 1.),
   },
 
   EventNameSP.manualLongitudinalRequired: {
     ET.WARNING: Alert(
-      "Smart/Adaptive Cruise Control: OFF",
-      "Manual Speed Control Required",
+      "自適應巡航控制:關閉",
+      "請手動控制車速",
       AlertStatus.normal, AlertSize.mid,
       Priority.LOW, VisualAlert.none, AudibleAlert.none, 1.),
   },
@@ -65,7 +65,7 @@ EVENTS_SP: dict[int, dict[str, Alert | AlertCallbackType]] = {
 
   EventNameSP.silentBrakeHold: {
     ET.USER_DISABLE: EngagementAlert(AudibleAlert.none),
-    ET.NO_ENTRY: NoEntryAlert("Brake Hold Active"),
+    ET.NO_ENTRY: NoEntryAlert("正在使用煞車保持"),
   },
 
   EventNameSP.silentWrongGear: {
@@ -75,19 +75,19 @@ EVENTS_SP: dict[int, dict[str, Alert | AlertCallbackType]] = {
       AlertStatus.normal, AlertSize.none,
       Priority.LOWEST, VisualAlert.none, AudibleAlert.none, 0.),
     ET.NO_ENTRY: Alert(
-      "Gear not D",
-      "openpilot Unavailable",
+      "請切換到D檔",
+      "openpilot 暫不可用",
       AlertStatus.normal, AlertSize.mid,
       Priority.LOW, VisualAlert.none, AudibleAlert.none, 0.),
   },
 
   EventNameSP.silentReverseGear: {
     ET.PERMANENT: Alert(
-      "Reverse\nGear",
+      "倒車中\請注意周圍環境",
       "",
       AlertStatus.normal, AlertSize.full,
       Priority.LOWEST, VisualAlert.none, AudibleAlert.none, .2, creation_delay=0.5),
-    ET.NO_ENTRY: NoEntryAlert("Reverse Gear"),
+    ET.NO_ENTRY: NoEntryAlert("倒車中"),
   },
 
   EventNameSP.silentDoorOpen: {
@@ -96,7 +96,7 @@ EVENTS_SP: dict[int, dict[str, Alert | AlertCallbackType]] = {
       "",
       AlertStatus.normal, AlertSize.none,
       Priority.LOWEST, VisualAlert.none, AudibleAlert.none, 0.),
-    ET.NO_ENTRY: NoEntryAlert("Door Open"),
+    ET.NO_ENTRY: NoEntryAlert("車門未關"),
   },
 
   EventNameSP.silentSeatbeltNotLatched: {
@@ -114,20 +114,20 @@ EVENTS_SP: dict[int, dict[str, Alert | AlertCallbackType]] = {
       "",
       AlertStatus.normal, AlertSize.none,
       Priority.LOWEST, VisualAlert.none, AudibleAlert.none, 0.),
-    ET.NO_ENTRY: NoEntryAlert("Parking Brake Engaged"),
+    ET.NO_ENTRY: NoEntryAlert("駐車制動已啟用"),
   },
 
   EventNameSP.controlsMismatchLateral: {
-    ET.IMMEDIATE_DISABLE: ImmediateDisableAlert("Controls Mismatch: Lateral"),
-    ET.NO_ENTRY: NoEntryAlert("Controls Mismatch: Lateral"),
+    ET.IMMEDIATE_DISABLE: ImmediateDisableAlert("橫向控制不匹配"),
+    ET.NO_ENTRY: NoEntryAlert("橫向控制不匹配"),
   },
 
   EventNameSP.hyundaiRadarTracksConfirmed: {
-    ET.PERMANENT: NormalPermanentAlert("Radar tracks available. Restart the car to initialize")
+    ET.PERMANENT: NormalPermanentAlert("雷達軌跡可用。請重啟車輛進行初始化")
   },
 
   EventNameSP.experimentalModeSwitched: {
-    ET.WARNING: NormalPermanentAlert("Experimental Mode Switched", duration=1.5)
+    ET.WARNING: NormalPermanentAlert("已切換為實驗模式", duration=1.5)
   },
 
   EventNameSP.wrongCarModeAlertOnly: {
