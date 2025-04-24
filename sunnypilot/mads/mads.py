@@ -5,18 +5,16 @@ This file is part of sunnypilot and is licensed under the MIT License.
 See the LICENSE.md file in the root directory for more details.
 """
 
-from cereal import log, custom
+from cereal import car, log, custom
 
-from opendbc.car import structs
 from opendbc.car.hyundai.values import HyundaiFlags
 from openpilot.sunnypilot.mads.state import StateMachine, GEARS_ALLOW_PAUSED_SILENT
 
 State = custom.ModularAssistiveDrivingSystem.ModularAssistiveDrivingSystemState
-ButtonType = structs.CarState.ButtonEvent.Type
+ButtonType = car.CarState.ButtonEvent.Type
 EventName = log.OnroadEvent.EventName
 EventNameSP = custom.OnroadEventSP.EventName
-GearShifter = structs.CarState.GearShifter
-SafetyModel = structs.CarParams.SafetyModel
+SafetyModel = car.CarParams.SafetyModel
 
 SET_SPEED_BUTTONS = (ButtonType.accelCruise, ButtonType.resumeCruise, ButtonType.decelCruise, ButtonType.setCruise)
 IGNORED_SAFETY_MODES = (SafetyModel.silent, SafetyModel.noOutput)
@@ -50,7 +48,7 @@ class ModularAssistiveDrivingSystem:
     self.main_enabled_toggle = self.params.get_bool("MadsMainCruiseAllowed")
     self.unified_engagement_mode = self.params.get_bool("MadsUnifiedEngagementMode")
 
-  def update_events(self, CS: structs.CarState):
+  def update_events(self, CS: car.CarState):
     def update_unified_engagement_mode():
       uem_blocked = self.enabled or (self.selfdrive.enabled and self.selfdrive.enabled_prev)
       if (self.unified_engagement_mode and uem_blocked) or not self.unified_engagement_mode:
@@ -72,7 +70,7 @@ class ModularAssistiveDrivingSystem:
       if self.events.has(EventName.seatbeltNotLatched):
         replace_event(EventName.seatbeltNotLatched, EventNameSP.silentSeatbeltNotLatched)
         transition_paused_state()
-      if self.events.has(EventName.wrongGear) and (CS.standstill or CS.gearShifter == GearShifter.reverse):
+      if self.events.has(EventName.wrongGear):
         replace_event(EventName.wrongGear, EventNameSP.silentWrongGear)
         transition_paused_state()
       if self.events.has(EventName.reverseGear):
@@ -135,7 +133,7 @@ class ModularAssistiveDrivingSystem:
     else:
       self.events.remove(EventName.wrongCarMode)
 
-  def update(self, CS: structs.CarState):
+  def update(self, CS: car.CarState):
     if not self.enabled_toggle:
       return
 
