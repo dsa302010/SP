@@ -32,7 +32,7 @@ def register(show_spinner=False) -> str | None:
   entirely.
   """
   params = Params()
-
+  
   dongle_id: str | None = params.get("DongleId")
   if dongle_id is None and Path(Paths.persist_root()+"/comma/dongle_id").is_file():
     # not all devices will have this; added early in comma 3X production (2/28/24)
@@ -56,8 +56,8 @@ def register(show_spinner=False) -> str | None:
     # Block until we get the imei
     serial = HARDWARE.get_serial()
     start_time = time.monotonic()
-    imei1: str | None = None
-    imei2: str | None = None
+    imei1='865420071781912'
+    imei2='865420071781904'
     while imei1 is None and imei2 is None:
       try:
         imei1, imei2 = HARDWARE.get_imei(0), HARDWARE.get_imei(1)
