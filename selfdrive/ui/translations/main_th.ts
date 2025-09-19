@@ -162,6 +162,13 @@ Please use caution when using this feature. Only use the blinker when traffic an
     </message>
 </context>
 <context>
+    <name>DecControllerSubpanel</name>
+    <message>
+        <source>Back</source>
+        <translation type="obsolete">ย้อนกลับ</translation>
+    </message>
+</context>
+<context>
     <name>DeclinePage</name>
     <message>
         <source>Back</source>
@@ -248,6 +255,14 @@ This only toggles the visibility of the controls; it does not toggle the actual 
     </message>
     <message>
         <source>Quickboot mode requires updates to be disabled.&lt;br&gt;Enable &apos;Disable Updates&apos; in the Software panel first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable Copyparty service</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copyparty is a very capable file server, you can use it to download your routes, view your logs and even make some edits on some files from your browser. Requires you to connect to your comma locally via it&apos;s IP.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -374,8 +389,8 @@ This only toggles the visibility of the controls; it does not toggle the actual 
         <translation>ทบทวน</translation>
     </message>
     <message>
-        <source>Pair your device with comma connect (connect.comma.ai) and claim your comma prime offer.</source>
-        <translation>จับคู่อุปกรณ์ของคุณกับ comma connect (connect.comma.ai) และรับข้อเสนอ comma prime ของคุณ</translation>
+        <source>Pair your device with comma connect (stable.konik.ai) and claim your comma prime offer.</source>
+        <translation>จับคู่อุปกรณ์ของคุณกับ comma connect (stable.konik.ai) และรับข้อเสนอ comma prime ของคุณ</translation>
     </message>
     <message>
         <source>Pair Device</source>
@@ -595,6 +610,61 @@ This is the time after which settings UI closes automatically if user is not int
     </message>
 </context>
 <context>
+    <name>ExternalStorageControl</name>
+    <message>
+        <source>External Storage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Extend your comma device&apos;s storage by inserting a USB drive into the aux port.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>CHECK</source>
+        <translation type="unfinished">ตรวจสอบ</translation>
+    </message>
+    <message>
+        <source>MOUNT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>UNMOUNT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>FORMAT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Are you sure you want to format this drive? This will erase all data.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Format</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>formatting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>insert drive</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>needs format</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>mounting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>unmounting</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FirehosePanel</name>
     <message>
         <source>Firehose Mode: ACTIVE</source>
@@ -642,6 +712,29 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
     <message>
         <source>MAX</source>
         <translation>สูงสุด</translation>
+    </message>
+    <message>
+        <source>ACTIVE</source>
+        <translation type="obsolete">เปิดใช้งาน</translation>
+    </message>
+</context>
+<context>
+    <name>HudRendererSP</name>
+    <message>
+        <source>km/h</source>
+        <translation type="unfinished">กม./ชม.</translation>
+    </message>
+    <message>
+        <source>mph</source>
+        <translation type="unfinished">ไมล์/ชม.</translation>
+    </message>
+    <message>
+        <source>MAX</source>
+        <translation type="obsolete">สูงสุด</translation>
+    </message>
+    <message>
+        <source>ACTIVE</source>
+        <translation type="obsolete">เปิดใช้งาน</translation>
     </message>
 </context>
 <context>
@@ -713,6 +806,13 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
     <message>
         <source>Toggle to enable a delay timer for seamless lane changes when blind spot monitoring (BSM) detects a obstructing vehicle, ensuring safe maneuvering.</source>
         <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>LaneTurnSettings</name>
+    <message>
+        <source>Back</source>
+        <translation type="obsolete">ย้อนกลับ</translation>
     </message>
 </context>
 <context>
@@ -1038,6 +1138,18 @@ The default software delay value is 0.2</source>
         <source>Total Delay:</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Use Lane Turn Desires</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Adjust Lane Turn Speed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Set the maximum speed for lane turn desires. Default is 19 %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MultiOptionDialog</name>
@@ -1199,6 +1311,10 @@ The default software delay value is 0.2</source>
         <source>OpenStreetMap database is out of date. New maps must be downloaded if you wish to continue using OpenStreetMap data for Enhanced Speed Control and road name display.
 
 %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;Unsupported branch detected&lt;/b&gt; - The current version of &lt;b&gt;&lt;u&gt;%1&lt;/u&gt;&lt;/b&gt; branch is no longer supported on the comma three. Please go to &lt;b&gt;[Device &gt; Software]&lt;/b&gt; and install a supported branch with &lt;b&gt;&lt;u&gt;-tici&lt;/u&gt;&lt;/b&gt; in the branch name for the comma three.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1385,20 +1501,28 @@ Warning: You are on a metered connection!</source>
         <translation>จับคู่อุปกรณ์ของคุณกับบัญชี comma ของคุณ</translation>
     </message>
     <message>
-        <source>Go to https://connect.comma.ai on your phone</source>
-        <translation>ไปที่ https://connect.comma.ai ด้วยโทรศัพท์ของคุณ</translation>
+        <source>Go to https://stable.konik.ai on your phone</source>
+        <translation type="vanished">ไปที่ https://stable.konik.ai ด้วยโทรศัพท์ของคุณ</translation>
     </message>
     <message>
         <source>Click &quot;add new device&quot; and scan the QR code on the right</source>
         <translation>กดที่ &quot;add new device&quot; และสแกนคิวอาร์โค้ดทางด้านขวา</translation>
     </message>
     <message>
-        <source>Bookmark connect.comma.ai to your home screen to use it like an app</source>
-        <translation>จดจำ connect.comma.ai โดยการเพิ่มไปยังหน้าจอโฮม เพื่อใช้งานเหมือนเป็นแอปพลิเคชัน</translation>
+        <source>Bookmark stable.konik.ai to your home screen to use it like an app</source>
+        <translation type="vanished">จดจำ stable.konik.ai โดยการเพิ่มไปยังหน้าจอโฮม เพื่อใช้งานเหมือนเป็นแอปพลิเคชัน</translation>
     </message>
     <message>
         <source>Please connect to Wi-Fi to complete initial pairing</source>
         <translation>กรุณาเชื่อมต่อ Wi-Fi เพื่อทำการจับคู่ครั้งแรกให้เสร็จสิ้น</translation>
+    </message>
+    <message>
+        <source>Go to https://stable.konik.ai on your phone</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Bookmark stable.konik.ai to your home screen to use it like an app</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1509,8 +1633,8 @@ Warning: You are on a metered connection!</source>
         <translation>อัพเกรดเดี๋ยวนี้</translation>
     </message>
     <message>
-        <source>Become a comma prime member at connect.comma.ai</source>
-        <translation>สมัครสมาชิก comma prime ได้ที่ connect.comma.ai</translation>
+        <source>Become a comma prime member at stable.konik.ai</source>
+        <translation type="vanished">สมัครสมาชิก comma prime ได้ที่ stable.konik.ai</translation>
     </message>
     <message>
         <source>PRIME FEATURES:</source>
@@ -1531,6 +1655,10 @@ Warning: You are on a metered connection!</source>
     <message>
         <source>Remote snapshots</source>
         <translation>ภาพถ่ายระยะไกล</translation>
+    </message>
+    <message>
+        <source>Become a comma prime member at stable.konik.ai</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1674,12 +1802,16 @@ Warning: You are on a metered connection!</source>
         <translation>ตั้งค่าเสร็จสิ้น</translation>
     </message>
     <message>
-        <source>Pair your device with comma connect (connect.comma.ai) and claim your comma prime offer.</source>
-        <translation>จับคู่อุปกรณ์ของคุณกับ comma connect (connect.comma.ai) และรับข้อเสนอ comma prime ของคุณ</translation>
+        <source>Pair your device with comma connect (stable.konik.ai) and claim your comma prime offer.</source>
+        <translation type="vanished">จับคู่อุปกรณ์ของคุณกับ comma connect (stable.konik.ai) และรับข้อเสนอ comma prime ของคุณ</translation>
     </message>
     <message>
         <source>Pair device</source>
         <translation>จับคู่อุปกรณ์</translation>
+    </message>
+    <message>
+        <source>Pair your device with comma connect (stable.konik.ai) and claim your comma prime offer.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1706,15 +1838,15 @@ Warning: You are on a metered connection!</source>
     </message>
     <message>
         <source>HIGH</source>
-        <translation>สูง</translation>
+        <translation type="vanished">สูง</translation>
     </message>
     <message>
         <source>GOOD</source>
-        <translation>ดี</translation>
+        <translation type="vanished">ดี</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>พอใช้</translation>
+        <translation type="vanished">พอใช้</translation>
     </message>
     <message>
         <source>VEHICLE</source>
@@ -1755,6 +1887,22 @@ Warning: You are on a metered connection!</source>
     <message>
         <source>5G</source>
         <translation>5G</translation>
+    </message>
+    <message>
+        <source>CPU</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>GPU</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>MEMORY</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Free Space</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1900,6 +2048,31 @@ Warning: You are on a metered connection!</source>
     <message>
         <source>Please enable always offroad mode or turn off vehicle to adjust these toggles</source>
         <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SpeedLimitControlPolicy</name>
+    <message>
+        <source>Back</source>
+        <translation type="obsolete">ย้อนกลับ</translation>
+    </message>
+</context>
+<context>
+    <name>SpeedLimitControlSubpanel</name>
+    <message>
+        <source>Back</source>
+        <translation type="obsolete">ย้อนกลับ</translation>
+    </message>
+</context>
+<context>
+    <name>SpeedLimitControlWarning</name>
+    <message>
+        <source>Back</source>
+        <translation type="obsolete">ย้อนกลับ</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation type="obsolete">ไม่มี</translation>
     </message>
 </context>
 <context>
@@ -2135,6 +2308,38 @@ Warning: You are on a metered connection!</source>
     </message>
 </context>
 <context>
+    <name>TSKKeyboard</name>
+    <message>
+        <source>SecOCKey Install</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>INSTALL</source>
+        <translation type="unfinished">ติดตั้ง</translation>
+    </message>
+    <message>
+        <source>Archived key: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter your Car Security Key</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Success!
+Restart comma to have openpilot use the key</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Invalid key: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Not Installed</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>TermsPage</name>
     <message>
         <source>Decline</source>
@@ -2283,6 +2488,52 @@ Warning: You are on a metered connection!</source>
         <source>Enable the sunnypilot longitudinal control (alpha) toggle to allow Experimental mode.</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Off</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Lite</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Full</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>dashy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>dashy - dragonpilot&apos;s all-in-one system hub for you.
+
+Visit http://&lt;device_ip&gt;:5088 to access.
+
+Off - Turn off dashy completely.
+Lite: File Manager only.
+Full: File Manager + Live Stream.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Strict</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Moderate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Lenient</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Distraction Detection Level</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Set how sensitive the driver distraction detection should be. Strict: Very sensitive, warns on minor distractions. Moderate: Balanced between sensitivity and false positives. Lenient: Only alerts on clear distractions. Off: Disable Driver Distraction Detection and Control.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>TreeOptionDialog</name>
@@ -2293,6 +2544,10 @@ Warning: You are on a metered connection!</source>
     <message>
         <source>Cancel</source>
         <translation type="unfinished">ยกเลิก</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2335,6 +2590,43 @@ Warning: You are on a metered connection!</source>
     </message>
     <message>
         <source>Display useful metrics below the chevron that tracks the lead car (only applicable to cars with openpilot longitudinal control).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable Tesla Rainbow Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>A beautiful rainbow effect on the path the model wants to take.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>It</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>does not</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>affect driving in any way.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Developer UI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Display real-time parameters and metrics from various sources.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Right</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Right &amp;&amp;
+Bottom</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
