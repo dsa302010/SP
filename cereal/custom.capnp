@@ -122,6 +122,8 @@ struct ModelManagerSP @0xaedffd8f31e7b55d {
 
 struct LongitudinalPlanSP @0xf35cc4560bbf6ec2 {
   dec @0 :DynamicExperimentalControl;
+  longitudinalPlanSource @1 :LongitudinalPlanSource;
+  smartCruiseControl @2 :SmartCruiseControl;
 
   struct DynamicExperimentalControl {
     state @0 :DynamicExperimentalControlState;
@@ -132,6 +134,13 @@ struct LongitudinalPlanSP @0xf35cc4560bbf6ec2 {
       acc @0;
       blended @1;
     }
+  }
+
+  struct SmartCruiseControl {
+  }
+
+  enum LongitudinalPlanSource {
+    cruise @0;
   }
 }
 
@@ -207,7 +216,7 @@ struct CarControlSP @0xa5cd762cd951a455 {
 
     valueDEPRECATED @1 :Text; # The data type change may cause issues with backwards compatibility.
   }
-  
+
   enum ParamType {
     string @0;
     bool @1;
