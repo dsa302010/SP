@@ -890,6 +890,14 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
         <source>Start the vehicle to check vehicle compatibility.</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Smart Cruise Control - Vision</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use vision path predictions to estimate the appropriate speed to drive through turns ahead.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MadsSettings</name>
@@ -1512,7 +1520,7 @@ Warning: You are on a metered connection!</source>
     </message>
     <message>
         <source>Go to https://stable.konik.ai on your phone</source>
-        <translation type="vanished">انتقل إلى https://stable.konik.ai على جوالك</translation>
+        <translation>انتقل إلى https://stable.konik.ai على جوالك</translation>
     </message>
     <message>
         <source>Click &quot;add new device&quot; and scan the QR code on the right</source>
@@ -1520,19 +1528,11 @@ Warning: You are on a metered connection!</source>
     </message>
     <message>
         <source>Bookmark stable.konik.ai to your home screen to use it like an app</source>
-        <translation type="vanished">اجعل لـstable.konik.ai إشارة مرجعية على شاشتك  الرئيسية من أجل استخدامه مثل أي تطبيق</translation>
+        <translation>اجعل لـstable.konik.ai إشارة مرجعية على شاشتك  الرئيسية من أجل استخدامه مثل أي تطبيق</translation>
     </message>
     <message>
         <source>Please connect to Wi-Fi to complete initial pairing</source>
         <translation>يرجى الاتصال بشبكة الواي فاي لإكمال الاقتران الأولي</translation>
-    </message>
-    <message>
-        <source>Go to https://stable.konik.ai on your phone</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Bookmark stable.konik.ai to your home screen to use it like an app</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1644,7 +1644,7 @@ Warning: You are on a metered connection!</source>
     </message>
     <message>
         <source>Become a comma prime member at stable.konik.ai</source>
-        <translation type="vanished">كن عضوًا في comma prime على stable.konik.ai</translation>
+        <translation>كن عضوًا في comma prime على stable.konik.ai</translation>
     </message>
     <message>
         <source>PRIME FEATURES:</source>
@@ -1665,10 +1665,6 @@ Warning: You are on a metered connection!</source>
     <message>
         <source>Remote snapshots</source>
         <translation>لقطات عن بُعد</translation>
-    </message>
-    <message>
-        <source>Become a comma prime member at stable.konik.ai</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1828,15 +1824,11 @@ Warning: You are on a metered connection!</source>
     </message>
     <message>
         <source>Pair your device with comma connect (stable.konik.ai) and claim your comma prime offer.</source>
-        <translation type="vanished">اقرن جهازك بجهاز (stable.konik.ai) واحصل على عرضك من comma prime.</translation>
+        <translation>اقرن جهازك بجهاز (stable.konik.ai) واحصل على عرضك من comma prime.</translation>
     </message>
     <message>
         <source>Pair device</source>
         <translation>اقتران الجهاز</translation>
-    </message>
-    <message>
-        <source>Pair your device with comma connect (stable.konik.ai) and claim your comma prime offer.</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2652,6 +2644,14 @@ Full: File Manager + Live Stream.</source>
     <message>
         <source>Right &amp;&amp;
 Bottom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable Standstill Timer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show a timer on the HUD when the car is at a standstill.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

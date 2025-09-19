@@ -1200,6 +1200,22 @@ This will not disable OEM functionality.</source>
         <source>Customize DEC</source>
         <translation type="vanished">自定义 DEC</translation>
     </message>
+    <message>
+        <source>Intelligent Cruise Button Management (ICBM) (Alpha)</source>
+        <translation>智能巡航按钮管理（ICBM）（Alpha版）</translation>
+    </message>
+    <message>
+        <source>When enabled, sunnypilot will attempt to manage the built-in cruise control buttons by emulating button presses for limited longitudinal control.</source>
+        <translation>启用后，sunnypilot将尝试通过模拟按钮按下动作来管理内置巡航控制按钮，以实现有限的纵向控制。</translation>
+    </message>
+    <message>
+        <source>Smart Cruise Control - Vision</source>
+        <translation>智能巡航控制 - 视觉</translation>
+    </message>
+    <message>
+        <source>Use vision path predictions to estimate the appropriate speed to drive through turns ahead.</source>
+        <translation>利用视觉路径预测来预估通过前方弯道的合适速度。</translation>
+    </message>
 </context>
 <context>
     <name>MadsSettings</name>
@@ -1831,7 +1847,7 @@ Warning: You are on a metered connection!</source>
     </message>
     <message>
         <source>Go to https://stable.konik.ai on your phone</source>
-        <translation type="vanished">在手机上访问 https://stable.konik.ai</translation>
+        <translation>在手机上访问 https://stable.konik.ai</translation>
     </message>
     <message>
         <source>Click &quot;add new device&quot; and scan the QR code on the right</source>
@@ -1839,19 +1855,11 @@ Warning: You are on a metered connection!</source>
     </message>
     <message>
         <source>Bookmark stable.konik.ai to your home screen to use it like an app</source>
-        <translation type="vanished">将 stable.konik.ai 收藏到您的主屏幕，以便像应用程序一样使用它</translation>
+        <translation>将 stable.konik.ai 收藏到您的主屏幕，以便像应用程序一样使用它</translation>
     </message>
     <message>
         <source>Please connect to Wi-Fi to complete initial pairing</source>
         <translation>请连接 Wi-Fi 以完成初始配对</translation>
-    </message>
-    <message>
-        <source>Go to https://stable.konik.ai on your phone</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Bookmark stable.konik.ai to your home screen to use it like an app</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1963,7 +1971,7 @@ Warning: You are on a metered connection!</source>
     </message>
     <message>
         <source>Become a comma prime member at stable.konik.ai</source>
-        <translation type="vanished">打开stable.konik.ai以注册comma高级会员</translation>
+        <translation>打开stable.konik.ai以注册comma高级会员</translation>
     </message>
     <message>
         <source>PRIME FEATURES:</source>
@@ -1984,10 +1992,6 @@ Warning: You are on a metered connection!</source>
     <message>
         <source>Remote snapshots</source>
         <translation>远程快照</translation>
-    </message>
-    <message>
-        <source>Become a comma prime member at stable.konik.ai</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2132,15 +2136,11 @@ Warning: You are on a metered connection!</source>
     </message>
     <message>
         <source>Pair your device with comma connect (stable.konik.ai) and claim your comma prime offer.</source>
-        <translation type="vanished">将您的设备与comma connect （stable.konik.ai）配对并领取您的comma高级会员优惠。</translation>
+        <translation>将您的设备与comma connect （stable.konik.ai）配对并领取您的comma高级会员优惠。</translation>
     </message>
     <message>
         <source>Pair device</source>
         <translation>配对设备</translation>
-    </message>
-    <message>
-        <source>Pair your device with comma connect (stable.konik.ai) and claim your comma prime offer.</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3128,6 +3128,14 @@ and Right</source>
 Bottom</source>
         <translation>右侧 &amp;&amp;
 底部</translation>
+    </message>
+    <message>
+        <source>Enable Standstill Timer</source>
+        <translation>启用停车计时器</translation>
+    </message>
+    <message>
+        <source>Show a timer on the HUD when the car is at a standstill.</source>
+        <translation>当车辆静止时，在HUD上显示计时器。</translation>
     </message>
 </context>
 <context>

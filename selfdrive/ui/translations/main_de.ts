@@ -1196,6 +1196,14 @@ Dadurch wird die OEM-Funktionalität nicht deaktiviert.</translation>
         <source>Customize DEC</source>
         <translation type="vanished">DEC anpassen</translation>
     </message>
+    <message>
+        <source>Smart Cruise Control - Vision</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use vision path predictions to estimate the appropriate speed to drive through turns ahead.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MadsSettings</name>
@@ -1823,7 +1831,7 @@ Warning: You are on a metered connection!</source>
     </message>
     <message>
         <source>Go to https://stable.konik.ai on your phone</source>
-        <translation type="vanished">Gehe zu https://stable.konik.ai auf deinem Handy</translation>
+        <translation>Gehe zu https://stable.konik.ai auf deinem Handy</translation>
     </message>
     <message>
         <source>Click &quot;add new device&quot; and scan the QR code on the right</source>
@@ -1831,19 +1839,11 @@ Warning: You are on a metered connection!</source>
     </message>
     <message>
         <source>Bookmark stable.konik.ai to your home screen to use it like an app</source>
-        <translation type="vanished">Füge stable.konik.ai als Lesezeichen auf deinem Homescreen hinzu um es wie eine App zu verwenden</translation>
+        <translation>Füge stable.konik.ai als Lesezeichen auf deinem Homescreen hinzu um es wie eine App zu verwenden</translation>
     </message>
     <message>
         <source>Please connect to Wi-Fi to complete initial pairing</source>
         <translation>Bitte verbinde dich mit WLAN, um die Koppelung abzuschließen.</translation>
-    </message>
-    <message>
-        <source>Go to https://stable.konik.ai on your phone</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Bookmark stable.konik.ai to your home screen to use it like an app</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1955,7 +1955,7 @@ Warning: You are on a metered connection!</source>
     </message>
     <message>
         <source>Become a comma prime member at stable.konik.ai</source>
-        <translation type="vanished">Werde Comma Prime Mitglied auf stable.konik.ai</translation>
+        <translation>Werde Comma Prime Mitglied auf stable.konik.ai</translation>
     </message>
     <message>
         <source>PRIME FEATURES:</source>
@@ -1976,10 +1976,6 @@ Warning: You are on a metered connection!</source>
     <message>
         <source>Remote snapshots</source>
         <translation>Remote-Snapshots</translation>
-    </message>
-    <message>
-        <source>Become a comma prime member at stable.konik.ai</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2127,15 +2123,11 @@ Warning: You are on a metered connection!</source>
     </message>
     <message>
         <source>Pair your device with comma connect (stable.konik.ai) and claim your comma prime offer.</source>
-        <translation type="vanished">Koppele dein Gerät mit Comma Connect (stable.konik.ai) und sichere dir dein Comma Prime Angebot.</translation>
+        <translation>Koppele dein Gerät mit Comma Connect (stable.konik.ai) und sichere dir dein Comma Prime Angebot.</translation>
     </message>
     <message>
         <source>Pair device</source>
         <translation>Gerät koppeln</translation>
-    </message>
-    <message>
-        <source>Pair your device with comma connect (stable.konik.ai) and claim your comma prime offer.</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3125,6 +3117,14 @@ Voll: Dateimanager + Live-Stream.</translation>
 Bottom</source>
         <translation>Rechts &amp;&amp;
 Unten</translation>
+    </message>
+    <message>
+        <source>Enable Standstill Timer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show a timer on the HUD when the car is at a standstill.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

@@ -1207,6 +1207,14 @@ This will not disable OEM functionality.</source>
         <source>Customize DEC</source>
         <translation type="vanished">自訂 DEC</translation>
     </message>
+    <message>
+        <source>Smart Cruise Control - Vision</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use vision path predictions to estimate the appropriate speed to drive through turns ahead.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MadsSettings</name>
@@ -1834,7 +1842,7 @@ Warning: You are on a metered connection!</source>
     </message>
     <message>
         <source>Go to https://stable.konik.ai on your phone</source>
-        <translation type="vanished">用手機連至 https://stable.konik.ai</translation>
+        <translation>用手機連至 https://stable.konik.ai</translation>
     </message>
     <message>
         <source>Click &quot;add new device&quot; and scan the QR code on the right</source>
@@ -1842,19 +1850,11 @@ Warning: You are on a metered connection!</source>
     </message>
     <message>
         <source>Bookmark stable.konik.ai to your home screen to use it like an app</source>
-        <translation type="vanished">將 stable.konik.ai 加入您的主螢幕，以便像手機 App 一樣使用它</translation>
+        <translation>將 stable.konik.ai 加入您的主螢幕，以便像手機 App 一樣使用它</translation>
     </message>
     <message>
         <source>Please connect to Wi-Fi to complete initial pairing</source>
         <translation>請連接 Wi-Fi 以完成初始配對</translation>
-    </message>
-    <message>
-        <source>Go to https://stable.konik.ai on your phone</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Bookmark stable.konik.ai to your home screen to use it like an app</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1966,7 +1966,7 @@ Warning: You are on a metered connection!</source>
     </message>
     <message>
         <source>Become a comma prime member at stable.konik.ai</source>
-        <translation type="vanished">成為 stable.konik.ai 的高級會員</translation>
+        <translation>成為 stable.konik.ai 的高級會員</translation>
     </message>
     <message>
         <source>PRIME FEATURES:</source>
@@ -1987,10 +1987,6 @@ Warning: You are on a metered connection!</source>
     <message>
         <source>Remote snapshots</source>
         <translation>遠端快照</translation>
-    </message>
-    <message>
-        <source>Become a comma prime member at stable.konik.ai</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2135,15 +2131,11 @@ Warning: You are on a metered connection!</source>
     </message>
     <message>
         <source>Pair your device with comma connect (stable.konik.ai) and claim your comma prime offer.</source>
-        <translation type="vanished">將您的裝置與 comma connect (stable.konik.ai) 配對並領取您的 comma 高級會員優惠。</translation>
+        <translation>將您的裝置與 comma connect (stable.konik.ai) 配對並領取您的 comma 高級會員優惠。</translation>
     </message>
     <message>
         <source>Pair device</source>
         <translation>配對裝置</translation>
-    </message>
-    <message>
-        <source>Pair your device with comma connect (stable.konik.ai) and claim your comma prime offer.</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3118,6 +3110,14 @@ Full: File Manager + Live Stream.</source>
         <source>Right &amp;&amp;
 Bottom</source>
         <translation>右側 &amp;&amp; 底部</translation>
+    </message>
+    <message>
+        <source>Enable Standstill Timer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show a timer on the HUD when the car is at a standstill.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
