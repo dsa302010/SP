@@ -971,15 +971,15 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
     </message>
     <message>
         <source>SPEED</source>
-        <translation type="vanished">速度</translation>
+        <translation>速度</translation>
     </message>
     <message>
         <source>LIMIT</source>
-        <translation type="vanished">制限</translation>
+        <translation>制限</translation>
     </message>
     <message>
         <source>AHEAD</source>
-        <translation type="vanished">前方</translation>
+        <translation>前方</translation>
     </message>
     <message>
         <source>PREPARING</source>
@@ -992,6 +992,26 @@ Firehose Mode allows you to maximize your training data uploads to improve openp
     <message>
         <source>ACTIVE</source>
         <translation type="vanished">アクティブ</translation>
+    </message>
+    <message>
+        <source>Near</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>km</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>m</source>
+        <translation type="unfinished">m</translation>
+    </message>
+    <message>
+        <source>mi</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>ft</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1260,6 +1280,10 @@ This will not disable OEM functionality.</source>
     </message>
     <message>
         <source>When enabled, sunnypilot will attempt to manage the built-in cruise control buttons by emulating button presses for limited longitudinal control.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Speed Limit</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2075,6 +2099,55 @@ Warning: You are on a metered connection!</source>
         <source>sunnypilot</source>
         <translation>サニーパイロット</translation>
     </message>
+    <message>
+        <source>None</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Fixed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Percent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Car
+Only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Map
+Only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Car
+First</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Map
+First</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Combined
+Data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation type="unfinished">オフ</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>SettingsWindow</name>
@@ -2531,6 +2604,80 @@ Warning: You are on a metered connection!</source>
     <message>
         <source>⦿ Percent: Adds a percent offset [Speed Limit + (Offset % Speed Limit)]</source>
         <translation type="vanished">⦿ パーセント：パーセントオフセットを追加 [速度制限 + (オフセット % × 速度制限)]</translation>
+    </message>
+</context>
+<context>
+    <name>SpeedLimitPolicy</name>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished">戻る</translation>
+    </message>
+    <message>
+        <source>Speed Limit Source</source>
+        <translation type="unfinished">速度制限ソース</translation>
+    </message>
+    <message>
+        <source>⦿ Car Only: Use Speed Limit data only from Car</source>
+        <translation type="unfinished">⦿ 車両のみ：車両からの速度制限データのみを使用</translation>
+    </message>
+    <message>
+        <source>⦿ Map Only: Use Speed Limit data only from OpenStreetMaps</source>
+        <translation type="unfinished">⦿ 地図のみ: OpenStreetMapsからの速度制限データのみを使用します</translation>
+    </message>
+    <message>
+        <source>⦿ Car First: Use Speed Limit data from Car if available, else use from OpenStreetMaps</source>
+        <translation type="unfinished">⦿ 車両優先：利用可能な場合は車両からの速度制限データを使用し、それ以外の場合はOpenStreetMapsからのデータを使用します</translation>
+    </message>
+    <message>
+        <source>⦿ Map First: Use Speed Limit data from OpenStreetMaps if available, else use from Car</source>
+        <translation type="unfinished">⦿ マップ優先: OpenStreetMapsから速度制限データが利用可能な場合はそれを使用し、利用できない場合は車両からのデータを使用します</translation>
+    </message>
+    <message>
+        <source>⦿ Combined: Use combined Speed Limit data from Car &amp; OpenStreetMaps</source>
+        <translation type="unfinished">⦿ 統合: 車両とOpenStreetMapsからの速度制限データを統合して使用</translation>
+    </message>
+</context>
+<context>
+    <name>SpeedLimitSettings</name>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished">戻る</translation>
+    </message>
+    <message>
+        <source>Speed Limit Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Customize Source</source>
+        <translation type="unfinished">ソースをカスタマイズ</translation>
+    </message>
+    <message>
+        <source>Speed Limit Offset</source>
+        <translation type="unfinished">速度制限オフセット</translation>
+    </message>
+    <message>
+        <source>⦿ None: No Offset</source>
+        <translation type="unfinished">⦿ なし: オフセットなし</translation>
+    </message>
+    <message>
+        <source>⦿ Fixed: Adds a fixed offset [Speed Limit + Offset]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>⦿ Percent: Adds a percent offset [Speed Limit + (Offset % Speed Limit)]</source>
+        <translation type="unfinished">⦿ パーセント：パーセントオフセットを追加 [速度制限 + (オフセット % × 速度制限)]</translation>
+    </message>
+    <message>
+        <source>⦿ Off: Disables the Speed Limit functions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>⦿ Information: Displays the current road&apos;s speed limit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>⦿ Warning: Provides a warning when exceeding the current road&apos;s speed limit.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3175,6 +3322,14 @@ Bottom</source>
     </message>
     <message>
         <source>Show a timer on the HUD when the car is at a standstill.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Display Road Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Displays the name of the road the car is traveling on. The OpenStreetMap database of the location must be downloaded from the OSM panel to fetch the road name.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

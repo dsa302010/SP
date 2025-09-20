@@ -923,15 +923,15 @@ Firehose模式允许您最大化训练数据上传以改善openpilot的驾驶模
     </message>
     <message>
         <source>SPEED</source>
-        <translation type="vanished">速度</translation>
+        <translation>速度</translation>
     </message>
     <message>
         <source>LIMIT</source>
-        <translation type="vanished">限制</translation>
+        <translation>限制</translation>
     </message>
     <message>
         <source>AHEAD</source>
-        <translation type="vanished">前方</translation>
+        <translation>前方</translation>
     </message>
     <message>
         <source>PREPARING</source>
@@ -944,6 +944,26 @@ Firehose模式允许您最大化训练数据上传以改善openpilot的驾驶模
     <message>
         <source>ACTIVE</source>
         <translation type="vanished">激活</translation>
+    </message>
+    <message>
+        <source>Near</source>
+        <translation>附近</translation>
+    </message>
+    <message>
+        <source>km</source>
+        <translation>km</translation>
+    </message>
+    <message>
+        <source>m</source>
+        <translation>m</translation>
+    </message>
+    <message>
+        <source>mi</source>
+        <translation>mi</translation>
+    </message>
+    <message>
+        <source>ft</source>
+        <translation>ft</translation>
     </message>
 </context>
 <context>
@@ -1215,6 +1235,10 @@ This will not disable OEM functionality.</source>
     <message>
         <source>Use vision path predictions to estimate the appropriate speed to drive through turns ahead.</source>
         <translation>利用视觉路径预测来预估通过前方弯道的合适速度。</translation>
+    </message>
+    <message>
+        <source>Speed Limit</source>
+        <translation>速度限制</translation>
     </message>
 </context>
 <context>
@@ -2033,6 +2057,60 @@ Warning: You are on a metered connection!</source>
         <source>sunnypilot</source>
         <translation>阳光驾驶</translation>
     </message>
+    <message>
+        <source>None</source>
+        <translation>无</translation>
+    </message>
+    <message>
+        <source>Fixed</source>
+        <translation>固定</translation>
+    </message>
+    <message>
+        <source>Percent</source>
+        <translation>比率</translation>
+    </message>
+    <message>
+        <source>Car
+Only</source>
+        <translation>仅限
+车辆</translation>
+    </message>
+    <message>
+        <source>Map
+Only</source>
+        <translation>仅限
+地图</translation>
+    </message>
+    <message>
+        <source>Car
+First</source>
+        <translation>车辆
+优先</translation>
+    </message>
+    <message>
+        <source>Map
+First</source>
+        <translation>地图
+优先</translation>
+    </message>
+    <message>
+        <source>Combined
+Data</source>
+        <translation>组合
+数据</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>关闭</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>信息</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>警告</translation>
+    </message>
 </context>
 <context>
     <name>SettingsWindow</name>
@@ -2489,6 +2567,80 @@ Warning: You are on a metered connection!</source>
     <message>
         <source>⦿ Percent: Adds a percent offset [Speed Limit + (Offset % Speed Limit)]</source>
         <translation type="vanished">⦿ 百分比：添加百分比偏移量 [速度限制 + (偏移量 % 速度限制)]</translation>
+    </message>
+</context>
+<context>
+    <name>SpeedLimitPolicy</name>
+    <message>
+        <source>Back</source>
+        <translation>返回</translation>
+    </message>
+    <message>
+        <source>Speed Limit Source</source>
+        <translation>速度限制来源</translation>
+    </message>
+    <message>
+        <source>⦿ Car Only: Use Speed Limit data only from Car</source>
+        <translation>⦿ 仅限汽车：仅使用来自汽车的速度限制数据</translation>
+    </message>
+    <message>
+        <source>⦿ Map Only: Use Speed Limit data only from OpenStreetMaps</source>
+        <translation>⦿ 仅地图：仅使用来自OpenStreetMaps的速度限制数据</translation>
+    </message>
+    <message>
+        <source>⦿ Car First: Use Speed Limit data from Car if available, else use from OpenStreetMaps</source>
+        <translation>⦿ 优先使用车辆数据：如果车辆的限速数据可用，则使用车辆的数据，否则使用OpenStreetMaps的数据。</translation>
+    </message>
+    <message>
+        <source>⦿ Map First: Use Speed Limit data from OpenStreetMaps if available, else use from Car</source>
+        <translation>⦿ 优先使用地图：如果可用，使用OpenStreetMaps的速度限制数据，否则使用汽车的数据。</translation>
+    </message>
+    <message>
+        <source>⦿ Combined: Use combined Speed Limit data from Car &amp; OpenStreetMaps</source>
+        <translation>⦿ 组合：使用来自汽车和OpenStreetMaps的组合速度限制数据</translation>
+    </message>
+</context>
+<context>
+    <name>SpeedLimitSettings</name>
+    <message>
+        <source>Back</source>
+        <translation>返回</translation>
+    </message>
+    <message>
+        <source>Speed Limit Mode</source>
+        <translation>限速模式</translation>
+    </message>
+    <message>
+        <source>Customize Source</source>
+        <translation>自定义来源</translation>
+    </message>
+    <message>
+        <source>Speed Limit Offset</source>
+        <translation>速度限制偏移</translation>
+    </message>
+    <message>
+        <source>⦿ None: No Offset</source>
+        <translation>⦿ 无：无偏移</translation>
+    </message>
+    <message>
+        <source>⦿ Fixed: Adds a fixed offset [Speed Limit + Offset]</source>
+        <translation>⦿ 固定：添加固定偏移 [速度限制 + 偏移量]</translation>
+    </message>
+    <message>
+        <source>⦿ Percent: Adds a percent offset [Speed Limit + (Offset % Speed Limit)]</source>
+        <translation>⦿ 比率：添加百分比偏移 [速度限制 + (偏移量 % 速度限制)]</translation>
+    </message>
+    <message>
+        <source>⦿ Off: Disables the Speed Limit functions.</source>
+        <translation>⦿ 关闭：禁用速度限制功能。</translation>
+    </message>
+    <message>
+        <source>⦿ Information: Displays the current road&apos;s speed limit.</source>
+        <translation>⦿ 信息：显示当前道路的速度限制。</translation>
+    </message>
+    <message>
+        <source>⦿ Warning: Provides a warning when exceeding the current road&apos;s speed limit.</source>
+        <translation>⦿ 警告：当超过当前道路的速度限制时提供警告。</translation>
     </message>
 </context>
 <context>
@@ -3136,6 +3288,14 @@ Bottom</source>
     <message>
         <source>Show a timer on the HUD when the car is at a standstill.</source>
         <translation>当车辆静止时，在HUD上显示计时器。</translation>
+    </message>
+    <message>
+        <source>Display Road Name</source>
+        <translation>显示道路名称</translation>
+    </message>
+    <message>
+        <source>Displays the name of the road the car is traveling on. The OpenStreetMap database of the location must be downloaded from the OSM panel to fetch the road name.</source>
+        <translation>显示车辆行驶的道路名称。需要从OSM面板下载该位置的OpenStreetMap数据库以获取道路名称。</translation>
     </message>
 </context>
 <context>

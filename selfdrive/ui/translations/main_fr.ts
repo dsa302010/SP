@@ -921,15 +921,15 @@ Le Mode Firehose vous permet de maximiser vos téléchargements de données d&ap
     </message>
     <message>
         <source>SPEED</source>
-        <translation type="vanished">VITESSE</translation>
+        <translation>VITESSE</translation>
     </message>
     <message>
         <source>LIMIT</source>
-        <translation type="vanished">LIMITE</translation>
+        <translation>LIMITE</translation>
     </message>
     <message>
         <source>AHEAD</source>
-        <translation type="vanished">DEVANT</translation>
+        <translation>DEVANT</translation>
     </message>
     <message>
         <source>PREPARING</source>
@@ -942,6 +942,26 @@ Le Mode Firehose vous permet de maximiser vos téléchargements de données d&ap
     <message>
         <source>ACTIVE</source>
         <translation type="vanished">ACTIF</translation>
+    </message>
+    <message>
+        <source>Near</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>km</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>m</source>
+        <translation type="unfinished">m</translation>
+    </message>
+    <message>
+        <source>mi</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>ft</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1211,6 +1231,10 @@ Cela ne désactivera pas les fonctionnalités OEM.</translation>
     </message>
     <message>
         <source>When enabled, sunnypilot will attempt to manage the built-in cruise control buttons by emulating button presses for limited longitudinal control.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Speed Limit</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2029,6 +2053,55 @@ Warning: You are on a metered connection!</source>
         <source>sunnypilot</source>
         <translation>sunnypilot</translation>
     </message>
+    <message>
+        <source>None</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Fixed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Percent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Car
+Only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Map
+Only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Car
+First</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Map
+First</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Combined
+Data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>SettingsWindow</name>
@@ -2485,6 +2558,80 @@ Warning: You are on a metered connection!</source>
     <message>
         <source>⦿ Percent: Adds a percent offset [Speed Limit + (Offset % Speed Limit)]</source>
         <translation type="vanished">⦿ Pourcentage : Ajoute un décalage en pourcentage [Limite de vitesse + (Décalage % Limite de vitesse)]</translation>
+    </message>
+</context>
+<context>
+    <name>SpeedLimitPolicy</name>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished">Retour</translation>
+    </message>
+    <message>
+        <source>Speed Limit Source</source>
+        <translation type="unfinished">Source de la Limite de Vitesse</translation>
+    </message>
+    <message>
+        <source>⦿ Car Only: Use Speed Limit data only from Car</source>
+        <translation type="unfinished">⦿ Véhicule uniquement : Utiliser uniquement les données de limitation de vitesse provenant du véhicule</translation>
+    </message>
+    <message>
+        <source>⦿ Map Only: Use Speed Limit data only from OpenStreetMaps</source>
+        <translation type="unfinished">⦿ Carte uniquement : Utiliser uniquement les données de limitation de vitesse provenant d&apos;OpenStreetMaps</translation>
+    </message>
+    <message>
+        <source>⦿ Car First: Use Speed Limit data from Car if available, else use from OpenStreetMaps</source>
+        <translation type="unfinished">⦿ Priorité à la voiture : Utilise les données de limitation de vitesse de la voiture si disponibles, sinon utilise celles d&apos;OpenStreetMaps</translation>
+    </message>
+    <message>
+        <source>⦿ Map First: Use Speed Limit data from OpenStreetMaps if available, else use from Car</source>
+        <translation type="unfinished">⦿ Carte d&apos;abord : Utiliser les données de limitation de vitesse d&apos;OpenStreetMap si disponibles, sinon utiliser celles de la voiture</translation>
+    </message>
+    <message>
+        <source>⦿ Combined: Use combined Speed Limit data from Car &amp; OpenStreetMaps</source>
+        <translation type="unfinished">⦿ Combiné : Utiliser les données de limitation de vitesse combinées provenant de la voiture et d&apos;OpenStreetMaps</translation>
+    </message>
+</context>
+<context>
+    <name>SpeedLimitSettings</name>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished">Retour</translation>
+    </message>
+    <message>
+        <source>Speed Limit Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Customize Source</source>
+        <translation type="unfinished">Personnaliser la source</translation>
+    </message>
+    <message>
+        <source>Speed Limit Offset</source>
+        <translation type="unfinished">Décalage de limite de vitesse</translation>
+    </message>
+    <message>
+        <source>⦿ None: No Offset</source>
+        <translation type="unfinished">⦿ Aucun : Aucun décalage</translation>
+    </message>
+    <message>
+        <source>⦿ Fixed: Adds a fixed offset [Speed Limit + Offset]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>⦿ Percent: Adds a percent offset [Speed Limit + (Offset % Speed Limit)]</source>
+        <translation type="unfinished">⦿ Pourcentage : Ajoute un décalage en pourcentage [Limite de vitesse + (Décalage % Limite de vitesse)]</translation>
+    </message>
+    <message>
+        <source>⦿ Off: Disables the Speed Limit functions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>⦿ Information: Displays the current road&apos;s speed limit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>⦿ Warning: Provides a warning when exceeding the current road&apos;s speed limit.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3124,6 +3271,14 @@ Bas</translation>
     </message>
     <message>
         <source>Show a timer on the HUD when the car is at a standstill.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Display Road Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Displays the name of the road the car is traveling on. The OpenStreetMap database of the location must be downloaded from the OSM panel to fetch the road name.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
