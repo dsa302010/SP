@@ -2605,10 +2605,6 @@ Data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Speed Limit Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Customize Source</source>
         <translation type="unfinished">自定义来源</translation>
     </message>
@@ -2638,6 +2634,10 @@ Data</source>
     </message>
     <message>
         <source>⦿ Warning: Provides a warning when exceeding the current road&apos;s speed limit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Speed Limit</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

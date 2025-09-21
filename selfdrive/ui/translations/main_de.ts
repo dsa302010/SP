@@ -2611,10 +2611,6 @@ Data</source>
         <translation type="unfinished">Zurück</translation>
     </message>
     <message>
-        <source>Speed Limit Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Customize Source</source>
         <translation type="unfinished">Quelle anpassen</translation>
     </message>
@@ -2644,6 +2640,10 @@ Data</source>
     </message>
     <message>
         <source>⦿ Warning: Provides a warning when exceeding the current road&apos;s speed limit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Speed Limit</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

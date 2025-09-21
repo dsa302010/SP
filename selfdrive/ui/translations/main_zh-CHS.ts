@@ -2608,7 +2608,7 @@ Data</source>
     </message>
     <message>
         <source>Speed Limit Mode</source>
-        <translation>限速模式</translation>
+        <translation type="vanished">限速模式</translation>
     </message>
     <message>
         <source>Customize Source</source>
@@ -2641,6 +2641,10 @@ Data</source>
     <message>
         <source>⦿ Warning: Provides a warning when exceeding the current road&apos;s speed limit.</source>
         <translation>⦿ 警告：当超过当前道路的速度限制时提供警告。</translation>
+    </message>
+    <message>
+        <source>Speed Limit</source>
+        <translation>速度限制</translation>
     </message>
 </context>
 <context>
