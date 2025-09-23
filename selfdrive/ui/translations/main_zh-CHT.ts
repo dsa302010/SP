@@ -1247,6 +1247,14 @@ This will not disable OEM functionality.</source>
         <source>Speed Limit</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Smart Cruise Control - Map</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use map data to estimate the appropriate speed to drive through turns ahead.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MadsSettings</name>

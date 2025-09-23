@@ -1240,6 +1240,14 @@ This will not disable OEM functionality.</source>
         <source>Speed Limit</source>
         <translation>速度限制</translation>
     </message>
+    <message>
+        <source>Smart Cruise Control - Map</source>
+        <translation>智能巡航控制 - 地图</translation>
+    </message>
+    <message>
+        <source>Use map data to estimate the appropriate speed to drive through turns ahead.</source>
+        <translation>利用地图数据预估通过前方弯道时的合适车速。</translation>
+    </message>
 </context>
 <context>
     <name>MadsSettings</name>
