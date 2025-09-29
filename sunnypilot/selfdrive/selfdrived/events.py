@@ -2,17 +2,14 @@ from cereal import log, car, custom
 from openpilot.sunnypilot.selfdrive.selfdrived.events_base import EventsBase, Priority, ET, Alert, \
   NoEntryAlert, ImmediateDisableAlert, EngagementAlert, NormalPermanentAlert, AlertCallbackType, wrong_car_mode_alert
 
-
 AlertSize = log.SelfdriveState.AlertSize
 AlertStatus = log.SelfdriveState.AlertStatus
 VisualAlert = car.CarControl.HUDControl.VisualAlert
 AudibleAlert = car.CarControl.HUDControl.AudibleAlert
 EventNameSP = custom.OnroadEventSP.EventName
 
-
 # get event name from enum
 EVENT_NAME_SP = {v: k for k, v in EventNameSP.schema.enumerants.items()}
-
 
 class EventsSP(EventsBase):
   def __init__(self):
@@ -28,7 +25,6 @@ class EventsSP(EventsBase):
   def get_event_msg_type(self):
     return custom.OnroadEventSP.Event
 
-
 EVENTS_SP: dict[int, dict[str, Alert | AlertCallbackType]] = {
   # sunnypilot
   EventNameSP.lkasEnable: {
@@ -41,16 +37,16 @@ EVENTS_SP: dict[int, dict[str, Alert | AlertCallbackType]] = {
 
   EventNameSP.manualSteeringRequired: {
     ET.USER_DISABLE: Alert(
-      "自动车道居中功能已关闭",
-      "需要手动转向",
+      "自動車道置中已關閉",
+      "請手動操控方向盤",
       AlertStatus.normal, AlertSize.mid,
       Priority.LOW, VisualAlert.none, AudibleAlert.disengage, 1.),
   },
 
   EventNameSP.manualLongitudinalRequired: {
     ET.WARNING: Alert(
-      "智能/自适应巡航控制：关闭",
-      "需要手动速度控制",
+      "智慧/自動定速巡航已關閉",
+      "請手動控制車速",
       AlertStatus.normal, AlertSize.mid,
       Priority.LOW, VisualAlert.none, AudibleAlert.none, 1.),
   },
@@ -64,8 +60,8 @@ EVENTS_SP: dict[int, dict[str, Alert | AlertCallbackType]] = {
   },
 
   EventNameSP.silentBrakeHold: {
-    ET.WARNING: EngagementAlert(AudibleAlert.none),
-    ET.NO_ENTRY: NoEntryAlert("刹车保持激活"),
+    ET.USER_DISABLE: EngagementAlert(AudibleAlert.none),
+    ET.NO_ENTRY: NoEntryAlert("煞車保持作用中"),
   },
 
   EventNameSP.silentWrongGear: {
@@ -75,19 +71,19 @@ EVENTS_SP: dict[int, dict[str, Alert | AlertCallbackType]] = {
       AlertStatus.normal, AlertSize.none,
       Priority.LOWEST, VisualAlert.none, AudibleAlert.none, 0.),
     ET.NO_ENTRY: Alert(
-      "档位不在D档",
-      "openpilot不可用",
+      "檔位未切至 D 檔",
+      "openpilot 無法啟用",
       AlertStatus.normal, AlertSize.mid,
       Priority.LOW, VisualAlert.none, AudibleAlert.none, 0.),
   },
 
   EventNameSP.silentReverseGear: {
     ET.PERMANENT: Alert(
-      "倒车中",
+      "倒車中,注意周圍",
       "",
       AlertStatus.normal, AlertSize.full,
       Priority.LOWEST, VisualAlert.none, AudibleAlert.none, .2, creation_delay=0.5),
-    ET.NO_ENTRY: NoEntryAlert("倒车中"),
+    ET.NO_ENTRY: NoEntryAlert("倒車中,注意周圍"),
   },
 
   EventNameSP.silentDoorOpen: {
@@ -96,7 +92,7 @@ EVENTS_SP: dict[int, dict[str, Alert | AlertCallbackType]] = {
       "",
       AlertStatus.normal, AlertSize.none,
       Priority.LOWEST, VisualAlert.none, AudibleAlert.none, 0.),
-    ET.NO_ENTRY: NoEntryAlert("车门已打开"),
+    ET.NO_ENTRY: NoEntryAlert("車門未關"),
   },
 
   EventNameSP.silentSeatbeltNotLatched: {
@@ -105,7 +101,7 @@ EVENTS_SP: dict[int, dict[str, Alert | AlertCallbackType]] = {
       "",
       AlertStatus.normal, AlertSize.none,
       Priority.LOWEST, VisualAlert.none, AudibleAlert.none, 0.),
-    ET.NO_ENTRY: NoEntryAlert("请系好安全带"),
+    ET.NO_ENTRY: NoEntryAlert("安全帶未繫"),
   },
 
   EventNameSP.silentParkBrake: {
@@ -114,16 +110,16 @@ EVENTS_SP: dict[int, dict[str, Alert | AlertCallbackType]] = {
       "",
       AlertStatus.normal, AlertSize.none,
       Priority.LOWEST, VisualAlert.none, AudibleAlert.none, 0.),
-    ET.NO_ENTRY: NoEntryAlert("手刹已启用"),
+    ET.NO_ENTRY: NoEntryAlert("手煞車未放"),
   },
 
   EventNameSP.controlsMismatchLateral: {
-    ET.IMMEDIATE_DISABLE: ImmediateDisableAlert("控制装置不匹配：横向"),
-    ET.NO_ENTRY: NoEntryAlert("控制装置不匹配：横向"),
+    ET.IMMEDIATE_DISABLE: ImmediateDisableAlert("橫向控制不一致"),
+    ET.NO_ENTRY: NoEntryAlert("橫向控制不一致"),
   },
 
   EventNameSP.experimentalModeSwitched: {
-    ET.WARNING: NormalPermanentAlert("实验模式切换", duration=1.5)
+    ET.WARNING: NormalPermanentAlert("切換一般/實驗模式", duration=1.5)
   },
 
   EventNameSP.wrongCarModeAlertOnly: {
@@ -131,12 +127,12 @@ EVENTS_SP: dict[int, dict[str, Alert | AlertCallbackType]] = {
   },
 
   EventNameSP.pedalPressedAlertOnly: {
-    ET.WARNING: NoEntryAlert("踏板被踩下")
+    ET.WARNING: NoEntryAlert("請鬆開油門踏板")
   },
 
   EventNameSP.laneTurnLeft: {
     ET.WARNING: Alert(
-      "左转",
+      "向左轉",
       "",
       AlertStatus.normal, AlertSize.small,
       Priority.LOW, VisualAlert.none, AudibleAlert.none, 1.),
@@ -144,7 +140,7 @@ EVENTS_SP: dict[int, dict[str, Alert | AlertCallbackType]] = {
 
   EventNameSP.laneTurnRight: {
     ET.WARNING: Alert(
-      "右转",
+      "向右轉",
       "",
       AlertStatus.normal, AlertSize.small,
       Priority.LOW, VisualAlert.none, AudibleAlert.none, 1.),
