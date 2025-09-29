@@ -4,7 +4,7 @@ from opendbc.car import Bus, make_tester_present_msg, rate_limit, structs, ACCEL
 from opendbc.car.lateral import apply_meas_steer_torque_limits, apply_std_steer_angle_limits, common_fault_avoidance
 from opendbc.car.can_definitions import CanData
 from opendbc.car.carlog import carlog
-from opendbc.car.common.filter_simple import FirstOrderFilter
+from opendbc.car.common.filter_simple import FirstOrderFilter, HighPassFilter
 from opendbc.car.common.pid import PIDController
 from opendbc.car.secoc import add_mac, build_sync_mac
 from opendbc.car.interfaces import CarControllerBase
@@ -26,6 +26,8 @@ VisualAlert = structs.CarControl.HUDControl.VisualAlert
 ACCEL_WINDUP_LIMIT = 4.0 * DT_CTRL * 3  # m/s^2 / frame
 ACCEL_WINDDOWN_LIMIT = -4.0 * DT_CTRL * 3  # m/s^2 / frame
 ACCEL_PID_UNWIND = 0.03 * DT_CTRL * 3  # m/s^2 / frame
+
+MAX_PITCH_COMPENSATION = 1.5  # m/s^2
 
 # LKA limits
 # EPS faults if you apply torque while the steering rate is above 100 deg/s for too long
@@ -67,6 +69,7 @@ class CarController(CarControllerBase, SecOCLongCarController):
     self.long_pid = get_long_tune(self.CP, self.params)
     self.aego = FirstOrderFilter(0.0, 0.25, DT_CTRL * 3)
     self.pitch = FirstOrderFilter(0, 0.5, DT_CTRL)
+    self.pitch_hp = HighPassFilter(0.0, 0.25, 1.5, DT_CTRL)
 
     self.accel = 0
     self.prev_accel = 0
@@ -87,6 +90,7 @@ class CarController(CarControllerBase, SecOCLongCarController):
 
     if len(CC.orientationNED) == 3:
       self.pitch.update(CC.orientationNED[1])
+      self.pitch_hp.update(CC.orientationNED[1])
 
     # *** control msgs ***
     can_sends = []
@@ -225,6 +229,14 @@ class CarController(CarControllerBase, SecOCLongCarController):
           self.long_pid.i -= ACCEL_PID_UNWIND * float(np.sign(self.long_pid.i))
 
           error_future = pcm_accel_cmd - a_ego_future
+
+          if not stopping:
+            # Toyota's PCM slowly responds to changes in pitch. On change, we amplify our
+            # acceleration request to compensate for the undershoot and following overshoot
+            pitch_compensation = float(np.clip(math.sin(self.pitch_hp.x) * ACCELERATION_DUE_TO_GRAVITY,
+                                               -MAX_PITCH_COMPENSATION, MAX_PITCH_COMPENSATION))
+            pcm_accel_cmd += pitch_compensation
+
           pcm_accel_cmd = self.long_pid.update(error_future,
                                                speed=CS.out.vEgo,
                                                feedforward=pcm_accel_cmd,
