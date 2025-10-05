@@ -24,7 +24,7 @@ class ParamStore:
     self.values = {}
     self.cached_params_list: list[capnp.lib.capnp._DynamicStructBuilder] | None = None
 
-    self.frame = 0
+    self.frame = -1
 
   def update(self, params: Params) -> None:
     if self.frame % 300 == 0:
