@@ -340,10 +340,7 @@ class DynamicExperimentalController:
       self._mode_manager.request_mode('blended', confidence=0.9)
       return
 
-    # Driving slow: use ACC (but not if actively slowing down)
-    if self._has_slowness and not self._has_slow_down:
-      self._mode_manager.request_mode('acc', confidence=0.8)
-      return
+    
 
     # Default: ACC
     self._mode_manager.request_mode('acc', confidence=0.7)
