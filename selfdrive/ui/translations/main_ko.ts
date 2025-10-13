@@ -790,6 +790,10 @@ DEPARTING</source>
         <source>MAX</source>
         <translation>최대</translation>
     </message>
+    <message>
+        <source>STOPPED</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>HyundaiSettings</name>
@@ -1582,6 +1586,34 @@ Warning: You are on a metered connection!</source>
     <message>
         <source>Time remaining: </source>
         <translation>남은 시간: </translation>
+    </message>
+    <message>
+        <source>Search Country</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter search keywords, or leave blank to list all countries.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select Country</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Search State</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter search keywords, or leave blank to list all states.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select State</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No results found for keywords: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2824,6 +2856,22 @@ Bottom</source>
     <message>
         <source>Display real-time parameters and metrics from various sources.</source>
         <translation>다양한 출처의 실시간 매개변수 및 측정 지표를 표시합니다.</translation>
+    </message>
+    <message>
+        <source>When enabled, the speedometer on the onroad screen is not displayed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Display Turn Signals</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>When enabled, visual turn indicators are drawn on the HUD.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This feature requires openpilot longitudinal control to be available.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
