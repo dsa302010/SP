@@ -1571,6 +1571,7 @@ Warning: You are on a metered connection!</source>
     <message>
         <source>Time remaining: </source>
         <translation>剩餘時間： </translation>
+    </message>
     <message>
         <source>Search Country</source>
         <translation>搜尋國家/地區</translation>
